@@ -1,8 +1,12 @@
 const path = require("path");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+const mode = process.env["NODE_ENVIRONMENT"] === "production" ? "production" : "development"
+
+console.log({ mode });
 
 module.exports = {
-  mode: "development",
+  mode,
   entry: "./app.fsproj",
   output: {
     path: path.join(__dirname, "./public"),
@@ -20,5 +24,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [ new HtmlWebpackPlugin({ template: 'index.ejs' }) ]
+  plugins: [ new HtmlWebpackPlugin({ template: "index.ejs" }) ]
 }
