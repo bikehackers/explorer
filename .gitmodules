@@ -1,0 +1,3 @@
+[submodule "external/components-db"]
+	path = external/components-db
+	url = https://github.com/bikehackers/components-db

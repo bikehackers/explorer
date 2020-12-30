@@ -1,0 +1,14 @@
+source https://api.nuget.org/v3/index.json
+
+storage: none
+framework: net5.0, netstandard2.1
+
+nuget Fable.SimpleHttp
+nuget FSharp.Core 5.0.0
+nuget Fable.Core 3.1.6
+nuget Fable.Elmish
+nuget Fable.Elmish.React
+nuget Feliz 1.31.1
+nuget FsToolkit.ErrorHandling
+nuget Thoth.Json
+nuget Thoth.Json.Net

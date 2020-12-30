@@ -1,0 +1,596 @@
+[
+  {
+    "id": "5443eec9-9306-4769-80b5-4a0eef12ef3f",
+    "manufacturerCode": "pirelli",
+    "manufacturerProductCode": null,
+    "name": "Cinturato Gravel H",
+    "sizes": [
+      {
+        "manufacturerProductCode": null,
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 45,
+        "weight": 570,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 127
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 40,
+        "weight": 500,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 127
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 35,
+        "weight": 430,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 127
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 584,
+        "type": "tubeless",
+        "width": 45,
+        "weight": 520,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 127
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 584,
+        "type": "tubeless",
+        "width": 50,
+        "weight": 550,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 127
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 45,
+        "weight": 570,
+        "treadColor": "black",
+        "sidewallColor": "brown",
+        "tpi": 127
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 40,
+        "weight": 500,
+        "treadColor": "black",
+        "sidewallColor": "brown",
+        "tpi": 127
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 35,
+        "weight": 430,
+        "treadColor": "black",
+        "sidewallColor": "brown",
+        "tpi": 127
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 584,
+        "type": "tubeless",
+        "width": 45,
+        "weight": 520,
+        "treadColor": "black",
+        "sidewallColor": "brown",
+        "tpi": 127
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 584,
+        "type": "tubeless",
+        "width": 50,
+        "weight": 550,
+        "treadColor": "black",
+        "sidewallColor": "brown",
+        "tpi": 127
+      }
+    ]
+  },
+  {
+    "id": "6993be65-008d-409f-8880-1311c6b9886e",
+    "manufacturerCode": "pirelli",
+    "manufacturerProductCode": null,
+    "name": "Cinturato Gravel M",
+    "sizes": [
+      {
+        "manufacturerProductCode": null,
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 45,
+        "weight": 570,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 127
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 40,
+        "weight": 500,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 127
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 35,
+        "weight": 430,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 127
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 584,
+        "type": "tubeless",
+        "width": 45,
+        "weight": 520,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 127
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 584,
+        "type": "tubeless",
+        "width": 50,
+        "weight": 550,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 127
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 45,
+        "weight": 570,
+        "treadColor": "black",
+        "sidewallColor": "brown",
+        "tpi": 127
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 40,
+        "weight": 500,
+        "treadColor": "black",
+        "sidewallColor": "brown",
+        "tpi": 127
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 35,
+        "weight": 430,
+        "treadColor": "black",
+        "sidewallColor": "brown",
+        "tpi": 127
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 584,
+        "type": "tubeless",
+        "width": 45,
+        "weight": 520,
+        "treadColor": "black",
+        "sidewallColor": "brown",
+        "tpi": 127
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 584,
+        "type": "tubeless",
+        "width": 50,
+        "weight": 550,
+        "treadColor": "black",
+        "sidewallColor": "brown",
+        "tpi": 127
+      }
+    ]
+  },
+  {
+    "id": "841e5b08-50e3-48a3-ab9b-a378260a8027",
+    "manufacturerCode": "ritchey",
+    "manufacturerProductCode": null,
+    "name": "Speedmax WCS",
+    "sizes": [
+      {
+        "manufacturerProductCode": "46550817006",
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 40,
+        "weight": null,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 120
+      }
+    ]
+  },
+  {
+    "id": "c2dfef38-e4a3-4341-b8a6-27f8da60d2d5",
+    "manufacturerCode": "challenge",
+    "manufacturerProductCode": null,
+    "name": "Paris-Roubaix Open Pro",
+    "sizes": [
+      {
+        "manufacturerProductCode": "00512",
+        "bsd": 622,
+        "type": "clincher",
+        "width": 27,
+        "weight": 285,
+        "treadColor": "black",
+        "sidewallColor": "tan",
+        "tpi": 300
+      },
+      {
+        "manufacturerProductCode": "00513",
+        "bsd": 622,
+        "type": "clincher",
+        "width": 27,
+        "weight": 285,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 300
+      }
+    ]
+  },
+  {
+    "id": "9ec9c5d4-6b53-4f40-a120-e75c8378e663",
+    "manufacturerCode": "challenge",
+    "manufacturerProductCode": null,
+    "name": "Getaway",
+    "sizes": [
+      {
+        "manufacturerProductCode": "00570",
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 40,
+        "weight": 460,
+        "treadColor": "black",
+        "sidewallColor": "tan",
+        "tpi": 260
+      }
+    ]
+  },
+  {
+    "id": "f7b1509a-40bf-4689-868e-78077f55c79f",
+    "manufacturerCode": "panaracer",
+    "manufacturerProductCode": null,
+    "name": "Pasela ProTite",
+    "sizes": [
+      {
+        "manufacturerProductCode": "PA700PASF617",
+        "bsd": 559,
+        "type": "clincher",
+        "width": 42,
+        "weight": null,
+        "treadColor": "black",
+        "sidewallColor": "amber",
+        "tpi": 66
+      },
+      {
+        "manufacturerProductCode": "PA700PAS15",
+        "bsd": 559,
+        "type": "clincher",
+        "width": 37,
+        "weight": null,
+        "treadColor": "black",
+        "sidewallColor": "amber",
+        "tpi": 66
+      },
+      {
+        "manufacturerProductCode": "PA700PAS12",
+        "bsd": 559,
+        "type": "clincher",
+        "width": 32,
+        "weight": null,
+        "treadColor": "black",
+        "sidewallColor": "amber",
+        "tpi": 66
+      }
+    ]
+  },
+  {
+    "id": "4b484cca-7af8-4224-ac6c-98d12a0474b0",
+    "manufacturerCode": "rene-herse",
+    "manufacturerProductCode": "hurricane-ridge-tc",
+    "name": "Hurricane Ridge",
+    "sizes": [
+      {
+        "manufacturerProductCode": null,
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 42,
+        "weight": 515,
+        "treadColor": "black",
+        "sidewallColor": "tan",
+        "tpi": 90
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 42,
+        "weight": 465,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 90
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 42,
+        "weight": 465,
+        "treadColor": "black",
+        "sidewallColor": "tan",
+        "tpi": 90
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 42,
+        "weight": 515,
+        "treadColor": "black",
+        "sidewallColor": "dark-tan",
+        "tpi": 90
+      },
+      {
+        "manufacturerProductCode": null,
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 42,
+        "weight": 545,
+        "treadColor": "black",
+        "sidewallColor": "dark-tan",
+        "tpi": 90
+      }
+    ]
+  },
+  {
+    "id": "6ed50ef3-5c50-48e5-8353-9666e1ac7183",
+    "manufacturerCode": "teravail",
+    "manufacturerProductCode": "00570",
+    "name": "Rutland",
+    "sizes": [
+      {
+        "manufacturerProductCode": "TR2669",
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 38,
+        "weight": 460,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2670",
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 38,
+        "weight": 445,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2671",
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 38,
+        "weight": 445,
+        "treadColor": "black",
+        "sidewallColor": "tan",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2672",
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 42,
+        "weight": 540,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2673",
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 42,
+        "weight": 500,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2674",
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 42,
+        "weight": 440,
+        "treadColor": "black",
+        "sidewallColor": "tan",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2675",
+        "bsd": 584,
+        "type": "tubeless",
+        "width": 47,
+        "weight": 555,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2676",
+        "bsd": 584,
+        "type": "tubeless",
+        "width": 47,
+        "weight": 535,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2677",
+        "bsd": 584,
+        "type": "tubeless",
+        "width": 47,
+        "weight": 465,
+        "treadColor": "black",
+        "sidewallColor": "tan",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2700",
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 55,
+        "weight": 765,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2701",
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 55,
+        "weight": 670,
+        "treadColor": "black",
+        "sidewallColor": "tan",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2702",
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 55,
+        "weight": 865,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2703",
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 55,
+        "weight": 800,
+        "treadColor": "black",
+        "sidewallColor": "tan",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2704",
+        "bsd": 584,
+        "type": "tubeless",
+        "width": 54,
+        "weight": 645,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2705",
+        "bsd": 584,
+        "type": "tubeless",
+        "width": 54,
+        "weight": 580,
+        "treadColor": "black",
+        "sidewallColor": "tan",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2706",
+        "bsd": 584,
+        "type": "tubeless",
+        "width": 54,
+        "weight": 720,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2707",
+        "bsd": 584,
+        "type": "tubeless",
+        "width": 54,
+        "weight": 710,
+        "treadColor": "black",
+        "sidewallColor": "tan",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2708",
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 47,
+        "weight": 600,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2709",
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 47,
+        "weight": 530,
+        "treadColor": "black",
+        "sidewallColor": "tan",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2710",
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 47,
+        "weight": 655,
+        "treadColor": "black",
+        "sidewallColor": "black",
+        "tpi": 60
+      },
+      {
+        "manufacturerProductCode": "TR2711",
+        "bsd": 622,
+        "type": "tubeless",
+        "width": 47,
+        "weight": 620,
+        "treadColor": "black",
+        "sidewallColor": "tan",
+        "tpi": 60
+      }
+    ]
+  }
+]
