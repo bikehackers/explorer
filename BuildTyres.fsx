@@ -54,7 +54,7 @@ async {
   printfn "%s" blob
 
   do!
-    File.WriteAllTextAsync ("tyres.json", blob)
+    File.WriteAllTextAsync ("./app/public/tyres.json", blob)
     |> Async.AwaitTask
 
   printfn "Done. "
