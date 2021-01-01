@@ -8,6 +8,9 @@ dotnet fsi ./BuildTyres.fsx
 
 cd ./app
 
+git config --global user.email 'bikehackers@users.noreply.github.com'
+git config --global user.name bikehackers
+
 # git clone git@github.com:bikehackers/bikehackers.github.io.git ./public
 git clone --branch master "https://$GITHUB_TOKEN@github.com/bikehackers/bikehackers.github.io.git" ./public
 
