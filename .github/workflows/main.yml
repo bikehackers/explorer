@@ -1,9 +1,6 @@
-name: Deploy
+name: Main
 
-on:
-  push:
-    branches:
-      - main
+on: [ push, pull_request ]
 
 jobs:
 
@@ -23,6 +20,6 @@ jobs:
       with:
         submodules: true
 
-    - name: Deploy
+    - name: Build
       run: |
-        ./deploy.sh
+        ./build.sh
