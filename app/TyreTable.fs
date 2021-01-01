@@ -18,7 +18,7 @@ let private viewRow tyre tyreSize =
     Html.td [ Html.code (string tyreSize.Width) ]
     Html.td [ Html.code (tyreSize.Weight |> Option.map string |> Option.defaultValue "-") ]
     Html.td (showTyreType tyreSize.Type)
-    Html.td [ Html.code (string tyreSize.Tpi) ]
+    Html.td [ Html.code (tyreSize.Tpi |> Option.map string |> Option.defaultValue "-") ]
     Html.td [ Html.code tyreSize.TreadColor ]
     Html.td [ Html.code tyreSize.SidewallColor ]
   ]
