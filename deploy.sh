@@ -6,12 +6,12 @@ dotnet paket restore
 
 cd ./app
 
-git config --global user.email 'bikehackers@users.noreply.github.com'
-git config --global user.name bikehackers
+# git config --global user.email 'bikehackers@users.noreply.github.com'
+# git config --global user.name bikehackers
 
 pwd
-# git clone git@github.com:bikehackers/bikehackers.github.io.git ./public
-git clone --branch master "ssh://$GITHUB_TOKEN@github.com/bikehackers/bikehackers.github.io.git" ./public  || exit 1
+git clone --branch master git@github.com:bikehackers/bikehackers.github.io.git ./public
+# git clone --branch master "ssh://$GITHUB_TOKEN@github.com/bikehackers/bikehackers.github.io.git" ./public  || exit 1
 
 cd ./public
 
