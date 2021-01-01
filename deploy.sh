@@ -9,7 +9,7 @@ dotnet fsi ./BuildTyres.fsx
 cd ./app
 
 # git clone git@github.com:bikehackers/bikehackers.github.io.git ./public
-git clone --branch master 'https://${{ secrets.GITHUB_TOKEN }}@github.com/bikehackers/bikehackers.github.io.git' ./public
+git clone --branch master "https://$GITHUB_TOKEN@github.com/bikehackers/bikehackers.github.io.git" ./public
 
 cd ./public
 
