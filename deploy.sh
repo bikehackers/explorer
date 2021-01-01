@@ -1,14 +1,8 @@
 #!/usr/bin/env bash
 
-pwd
-
 dotnet restore
 dotnet tool restore
 dotnet paket restore
-
-mkdir -p ./app/public
-
-dotnet fsi ./BuildTyres.fsx
 
 cd ./app
 
@@ -20,11 +14,15 @@ git clone --branch master "ssh://$GITHUB_TOKEN@github.com/bikehackers/bikehacker
 
 cd ./public
 
+git remote -v
 git fetch origin
 
 rm -r *
 
-cd ..
+cd ../..
+dotnet fsi ./BuildTyres.fsx
+
+cd ./app
 pwd
 
 yarn install --pure-lockfile
