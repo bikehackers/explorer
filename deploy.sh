@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 
+pwd
+
 dotnet restore
 dotnet tool restore
 dotnet paket restore
+
+mkdir -p ./app/public
 
 dotnet fsi ./BuildTyres.fsx
 
@@ -32,6 +36,4 @@ pwd
 git status
 git remote -v
 
-git add .
-git commit -m 'Deploy'
-git push
+git add . && git commit -m 'Deploy' && git push
