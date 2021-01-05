@@ -8,6 +8,7 @@
 open System.IO
 // open DotNet.Globbing
 open Thoth.Json.Net
+open BikeHackers.Components
 open BikeHackers.Components.Thoth
 
 let rec private filesUnderPath (basePath : string) =
@@ -20,7 +21,6 @@ let rec private filesUnderPath (basePath : string) =
       for d in Directory.GetDirectories (basePath) do
         yield! filesUnderPath d
   }
-
 
 let files =
   filesUnderPath "./external/components-db/data/tyres"
@@ -44,6 +44,9 @@ async {
 
   // printfn "%A" tyres
 
+  printfn "There are %i tyres. " (Seq.length tyres)
+  printfn "There are %i tyre sizes. " (Seq.length (Seq.collect (fun x -> x.Sizes) tyres))
+
   let blob =
     tyres
     |> Seq.map Encode.tyre
@@ -51,7 +54,7 @@ async {
     |> Encode.list
     |> Encode.toString 2
 
-  printfn "%s" blob
+  // printfn "%s" blob
 
   do!
     File.WriteAllTextAsync ("./app/public/tyres.json", blob)
