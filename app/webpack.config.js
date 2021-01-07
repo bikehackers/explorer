@@ -1,28 +1,36 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const mode = process.env["NODE_ENVIRONMENT"] === "production" ? "production" : "development"
+const mode = process.env['NODE_ENVIRONMENT'] === 'production' ? 'production' : 'development'
 
 console.log({ mode });
 
 module.exports = {
   mode,
-  entry: "./app.fsproj",
+  entry: './app.fsproj',
   output: {
-    path: path.join(__dirname, "./public"),
-    filename: "bundle.js",
+    path: path.join(__dirname, './public'),
+    filename: 'bundle.js',
   },
   devServer: {
-    contentBase: "./public",
+    contentBase: './public',
     port: 8080,
   },
   module: {
     rules: [
       {
         test: /\.fs(x|proj)?$/,
-        use: "fable-loader"
+        use: 'fable-loader'
       }
     ]
   },
-  plugins: [ new HtmlWebpackPlugin({ template: "index.ejs" }) ]
+  plugins: [
+    new HtmlWebpackPlugin({ template: 'index.ejs' }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'static' },
+      ]
+    }),
+  ],
 }

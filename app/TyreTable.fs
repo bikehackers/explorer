@@ -9,6 +9,15 @@ let private showTyreType =
   | TyreType.Tubeless -> "Tubeless"
   | TyreType.Tubular -> "Tubular"
 
+let private showTyreApplication =
+  function
+    | TyreApplication.Track -> "Track"
+    | TyreApplication.Road -> "Road"
+    | TyreApplication.RoughRoad -> "Rough Road"
+    | TyreApplication.LightGravel -> "Light Gravel"
+    | TyreApplication.RoughGravel -> "Rough Gravel"
+    | TyreApplication.Singletrack -> "Singletrack"
+
 let private viewRow tyre tyreSize =
   Html.tr [
     // Html.td [ Html.code (string tyre.ID) ]
@@ -21,6 +30,20 @@ let private viewRow tyre tyreSize =
     Html.td [ Html.code (tyreSize.Tpi |> Option.map string |> Option.defaultValue "-") ]
     Html.td [ Html.code tyreSize.TreadColor ]
     Html.td [ Html.code tyreSize.SidewallColor ]
+    Html.td [
+      tyre.Application
+      |> Option.map (fun xs ->
+        Html.ul [
+          prop.classes [ "inline-list" ]
+          prop.children (
+            xs
+            |> Seq.map (showTyreApplication >> Html.code >> Html.li)
+            |> Seq.toList
+          )
+        ]
+      )
+      |> Option.defaultValue (Html.span "-")
+    ]
   ]
 
 let view (model : (Tyre * TyreSize) list) =
@@ -46,6 +69,7 @@ let view (model : (Tyre * TyreSize) list) =
         Html.th "TPI"
         Html.th "Tread Color"
         Html.th "Sidewall Color"
+        Html.th "Application"
       ]
     ]
     Html.tbody (
