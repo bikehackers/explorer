@@ -12,6 +12,8 @@ type Model =
     MinimumWidth : int
     MaximumWidth : int
     Types : Set<TyreType>
+    FilterApplications : bool
+    Applications : Set<TyreApplication>
   }
 
 type Message =
@@ -23,6 +25,8 @@ let init () =
     MinimumWidth = 40
     MaximumWidth = 42
     Types = Set.ofSeq [ TyreType.Tubeless ]
+    FilterApplications = false
+    Applications = Set.ofSeq [ TyreApplication.LightGravel; TyreApplication.RoughGravel ]
   }
 
 let update msg model =
@@ -30,7 +34,7 @@ let update msg model =
   f model, Cmd.none
 
 let private tyreTypeCheckbox model dispatch tyreType =
-  let id = "checkbox-" + (string tyreType).ToLowerInvariant ()
+  let id = "checkbox-type-" + (string tyreType).ToLowerInvariant ()
   [
     Html.input [
       prop.id id
@@ -57,7 +61,7 @@ let private tyreTypeCheckbox model dispatch tyreType =
   ]
 
 let private bsdRadio model dispatch bsd =
-  let id = "radio-" + (string bsd).ToLowerInvariant ()
+  let id = "radio-bsd-" + (string bsd).ToLowerInvariant ()
 
   let isChecked = model.BeadSeatDiameter = bsd
 
@@ -81,6 +85,45 @@ let private bsdRadio model dispatch bsd =
     Html.label [
       prop.htmlFor id
       prop.children [ Html.span friendlyName ]
+    ]
+  ]
+
+let private tyreApplicationCheckbox model dispatch tyreApplication =
+  let id = "checkbox-application-" + (string tyreApplication).ToLowerInvariant ()
+
+  let label =
+    match tyreApplication with
+    | TyreApplication.Track -> "Track"
+    | TyreApplication.Road -> "Road"
+    | TyreApplication.RoughRoad -> "Rough Road"
+    | TyreApplication.LightGravel -> "Light Gravel"
+    | TyreApplication.RoughGravel -> "Rough Gravel"
+    | TyreApplication.Singletrack -> "Singletrack"
+
+  [
+    Html.input [
+      prop.id id
+      prop.type'.checkbox
+      prop.disabled (not model.FilterApplications)
+      prop.isChecked (model.Applications |> Set.contains tyreApplication)
+      prop.onCheckedChange
+        (fun isChecked ->
+          dispatch
+            (UpdateModel (fun model ->
+              {
+                model with
+                  Applications =
+                    if isChecked
+                    then
+                      Set.add tyreApplication model.Applications
+                    else
+                      Set.remove tyreApplication model.Applications
+                        })))
+    ]
+    Html.label [
+      prop.htmlFor id
+      prop.disabled (not model.FilterApplications)
+      prop.children [ Html.span label ]
     ]
   ]
 
@@ -133,4 +176,39 @@ let view model dispatch =
                   })))
     ]
 
+    Html.h3 "Application"
+
+    Html.input [
+      prop.id "checkbox-application-filter"
+      prop.type'.checkbox
+      prop.isChecked (model.FilterApplications)
+      prop.onCheckedChange
+        (fun isChecked ->
+          dispatch
+            (UpdateModel (fun model ->
+              {
+                model with
+                  FilterApplications = not model.FilterApplications })))
+    ]
+    Html.label [
+      prop.htmlFor "checkbox-application-filter"
+      prop.children [ Html.span "Filter by application?" ]
+    ]
+
+    let applications =
+      [
+        TyreApplication.Track
+        TyreApplication.Road
+        TyreApplication.RoughRoad
+        TyreApplication.LightGravel
+        TyreApplication.RoughGravel
+        TyreApplication.Singletrack
+      ]
+
+    Html.div
+      (seq {
+        for application in applications do
+          yield! tyreApplicationCheckbox model dispatch application
+      }
+      |> Seq.toList)
   ]
