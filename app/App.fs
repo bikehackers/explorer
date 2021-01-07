@@ -82,6 +82,15 @@ let view model dispatch =
           && Set.contains tyreSize.Type model.QueryDesigner.Types
           && model.QueryDesigner.MinimumWidth <= tyreSize.Width
           && model.QueryDesigner.MaximumWidth >= tyreSize.Width
+          && (
+              not model.QueryDesigner.FilterApplications
+              || (
+                tyre.Application
+                |> Option.defaultValue Set.empty
+                |> Set.intersect model.QueryDesigner.Applications
+                |> Seq.isEmpty
+                |> not)
+            )
         )
         |> Seq.toList
 
