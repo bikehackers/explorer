@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 dotnet restore
 dotnet tool restore
 dotnet paket restore
