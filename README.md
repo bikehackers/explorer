@@ -1,1 +1,5 @@
-# www
+# explorer
+
+```bash
+./build.sh
+```
