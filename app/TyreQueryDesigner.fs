@@ -151,7 +151,8 @@ let view model dispatch =
       prop.max 100
       prop.onChange
         (fun (e : Event) ->
-          let x = int !!e?target?value
+          let x = int (e?target?value : float)
+
           dispatch
             (UpdateModel (fun model ->
               { model with
@@ -167,7 +168,8 @@ let view model dispatch =
       prop.max 100
       prop.onChange
         (fun (e : Event) ->
-          let x = int !!e?target?value
+          let x = int (e?target?value : float)
+
           dispatch
             (UpdateModel (fun model ->
               { model with
