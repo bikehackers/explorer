@@ -1,3 +1,4 @@
+GENERATE-LOAD-SCRIPTS: ON
 STORAGE: NONE
 RESTRICTION: || (== net50) (== netstandard2.1)
 NUGET
@@ -26,7 +27,7 @@ NUGET
       FSharp.Core (>= 4.7)
     Fable.Core (3.1.6)
       FSharp.Core (>= 4.7.1)
-    Fable.Elmish (3.1)
+    Fable.Elmish (3.0)
       Fable.Core (>= 3.0)
       FSharp.Core (>= 4.6.2)
     Fable.Elmish.React (3.0.1)

@@ -1,12 +1,10 @@
-#r "nuget: DotNet.Glob"
-#r "nuget: Thoth.Json"
-#r "nuget: Thoth.Json.Net"
+#load @".paket/load/net50/Thoth.Json.fsx"
+#load @".paket/load/net50/Thoth.Json.Net.fsx"
 
-#load "external/components-db/components/Types.fs"
-#load "external/components-db/components/Thoth.fs"
+#load @"external/components-db/components/Types.fs"
+#load @"external/components-db/components/Thoth.fs"
 
 open System.IO
-// open DotNet.Globbing
 open Thoth.Json.Net
 open BikeHackers.Components
 open BikeHackers.Components.Thoth
