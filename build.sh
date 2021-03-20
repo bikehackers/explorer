@@ -8,6 +8,8 @@ dotnet paket restore
 
 dotnet build
 
+mkdir -p app/public/
+
 dotnet fsi ./BuildTyres.fsx
 
 cd ./app
