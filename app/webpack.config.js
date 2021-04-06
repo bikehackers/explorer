@@ -8,7 +8,7 @@ console.log({ mode });
 
 module.exports = {
   mode,
-  entry: './app.fsproj',
+  entry: './App.fs.js',
   output: {
     path: path.join(__dirname, './public'),
     filename: 'bundle.js',
@@ -16,14 +16,6 @@ module.exports = {
   devServer: {
     contentBase: './public',
     port: 8080,
-  },
-  module: {
-    rules: [
-      {
-        test: /\.fs(x|proj)?$/,
-        use: 'fable-loader'
-      }
-    ]
   },
   plugins: [
     new HtmlWebpackPlugin({ template: 'index.ejs' }),

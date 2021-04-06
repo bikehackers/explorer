@@ -13,7 +13,11 @@ mkdir -p app/public/
 
 dotnet fsi ./BuildTyres.fsx
 
-cd ./app
+(cd ./app
+
+dotnet femto
+
+dotnet fable .
 
 yarn install --pure-lockfile
-NODE_ENVIRONMENT=production yarn webpack
+NODE_ENVIRONMENT=production yarn webpack)
