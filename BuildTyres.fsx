@@ -43,7 +43,7 @@ async {
   // printfn "%A" tyres
 
   printfn "There are %i tyres. " (Seq.length tyres)
-  printfn "There are %i tyre sizes. " (Seq.length (Seq.collect (fun x -> x.Sizes) tyres))
+  printfn "There are %i tyre sizes. " (Seq.length (Seq.collect (fun (x : Tyre) -> x.Sizes) tyres))
 
   let blob =
     tyres

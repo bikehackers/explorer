@@ -18,7 +18,7 @@ let private showTyreApplication =
     | TyreApplication.RoughGravel -> "Rough Gravel"
     | TyreApplication.Singletrack -> "Singletrack"
 
-let private viewRow tyre tyreSize =
+let private viewRow (tyre : Tyre) (tyreSize : TyreSize) =
   Html.tr [
     // Html.td [ Html.code (string tyre.ID) ]
     Html.td tyre.ManufacturerCode

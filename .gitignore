@@ -4,3 +4,4 @@ paket-files
 .paket
 .ionide
 node_modules
+*.fs.js
